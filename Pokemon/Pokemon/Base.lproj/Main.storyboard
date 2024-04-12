@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14h-SI-loY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemons View Controller-->
+        <scene sceneID="6SI-L0-lIg">
+            <objects>
+                <viewController id="U2S-Ci-uKa" customClass="PokemonsViewController" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JCy-BG-pke">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pnC-Zi-ZR6">
+                                <rect key="frame" x="27" y="90" width="339" height="744"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="muh-FJ-dhx">
+                                        <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="744"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="al3-hw-XNQ">
+                                                <rect key="frame" x="0.0" y="50" width="165.66666666666666" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="al3-hw-XNQ" id="eqb-06-lXP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-QH-rd0">
+                                        <rect key="frame" x="173.66666666666663" y="0.0" width="165.33333333333337" height="744"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="c5u-dj-fCF">
+                                                <rect key="frame" x="0.0" y="50" width="165.33333333333337" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c5u-dj-fCF" id="jOh-2e-3e4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165.33333333333337" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nWV-pk-gUB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pnC-Zi-ZR6" firstAttribute="top" secondItem="nWV-pk-gUB" secondAttribute="top" constant="31" id="GkA-T7-8Vm"/>
+                            <constraint firstItem="pnC-Zi-ZR6" firstAttribute="leading" secondItem="nWV-pk-gUB" secondAttribute="leading" constant="27" id="joA-jY-rt2"/>
+                            <constraint firstAttribute="bottom" secondItem="pnC-Zi-ZR6" secondAttribute="bottom" constant="18" id="nxN-gC-zEd"/>
+                            <constraint firstItem="pnC-Zi-ZR6" firstAttribute="centerX" secondItem="JCy-BG-pke" secondAttribute="centerX" id="rdy-PD-dOs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jza-vk-B8b"/>
+                    <connections>
+                        <outlet property="pokemonsTableViewone" destination="muh-FJ-dhx" id="yzs-XZ-7Jr"/>
+                        <outlet property="pokemonsTableViewtwo" destination="rwt-QH-rd0" id="1Jl-sf-jyx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5t-5h-UMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141.22137404580153" y="-882.3943661971831"/>
+        </scene>
+        <!--Kolado View Controller-->
+        <scene sceneID="ZKt-fw-99C">
+            <objects>
+                <viewController id="14h-SI-loY" customClass="KoladoViewController" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lhX-6Q-WfP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBs-x5-u2H" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="16" y="240" width="361" height="311"/>
+                                <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7L-jU-Bg3">
+                                <rect key="frame" x="296" y="72" width="65" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Liked"/>
+                                <connections>
+                                    <action selector="likedBtnTapped:" destination="14h-SI-loY" eventType="touchUpInside" id="Cgw-tq-tvg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yan-bI-5zh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yan-bI-5zh" firstAttribute="bottom" secondItem="PBs-x5-u2H" secondAttribute="bottom" constant="267" id="0Is-H3-sji"/>
+                            <constraint firstItem="m7L-jU-Bg3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yan-bI-5zh" secondAttribute="leading" id="35Y-YU-dgY"/>
+                            <constraint firstItem="PBs-x5-u2H" firstAttribute="leading" secondItem="yan-bI-5zh" secondAttribute="leading" constant="16" id="DUy-FQ-TYz"/>
+                            <constraint firstItem="PBs-x5-u2H" firstAttribute="top" secondItem="lhX-6Q-WfP" secondAttribute="top" constant="240" id="Mpj-cC-wtG"/>
+                            <constraint firstItem="yan-bI-5zh" firstAttribute="trailing" secondItem="PBs-x5-u2H" secondAttribute="trailing" constant="16" id="YO2-Qt-98K"/>
+                            <constraint firstItem="m7L-jU-Bg3" firstAttribute="top" secondItem="yan-bI-5zh" secondAttribute="top" constant="13" id="Zak-kk-mfD"/>
+                            <constraint firstItem="yan-bI-5zh" firstAttribute="trailing" secondItem="m7L-jU-Bg3" secondAttribute="trailing" constant="32" id="aiS-hQ-ulo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaimage" destination="PBs-x5-u2H" id="UlJ-fk-eRP"/>
+                        <outlet property="likedBtn" destination="m7L-jU-Bg3" id="Czu-sq-35p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8K-ez-IjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.29770992366412" y="-862.67605633802816"/>
+        </scene>
+        <!--ContainerVC-->
+        <scene sceneID="jpp-2T-mui">
+            <objects>
+                <viewController storyboardIdentifier="Container_VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Op4-Od-vXT" customClass="Container_VC" customModule="Pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="StB-de-qIv">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="311"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xK7-mB-3MI">
+                                <rect key="frame" x="0.0" y="0.0" width="361" height="311"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wJd-lc-OAD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xK7-mB-3MI" secondAttribute="bottom" id="IAW-68-GmX"/>
+                            <constraint firstItem="xK7-mB-3MI" firstAttribute="leading" secondItem="wJd-lc-OAD" secondAttribute="leading" id="a7I-vv-zeK"/>
+                            <constraint firstItem="xK7-mB-3MI" firstAttribute="top" secondItem="StB-de-qIv" secondAttribute="top" id="e4b-qR-9y5"/>
+                            <constraint firstItem="xK7-mB-3MI" firstAttribute="trailing" secondItem="wJd-lc-OAD" secondAttribute="trailing" id="gEP-GR-AVc"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="361" height="311"/>
+                    <connections>
+                        <outlet property="containerImage" destination="xK7-mB-3MI" id="cVU-LY-PEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCJ-30-NrH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467.9389312977098" y="-489.08450704225356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

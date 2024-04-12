@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "75260BC0-5828-40A7-821B-C3E1C946CD2B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC5B3702-0844-4A23-9ECD-8DA19778851B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokemon/VCS/PokemonsVCS/PokemonsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C002E83-B5C4-4B69-8A9F-7938946DD3F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokemon/VCS/PokemonsVCS/PokemonsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "4C002E83-B5C4-4B69-8A9F-7938946DD3F2 - 4fcb634973e0e41d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Pokemon.Welcome, Swift.Error&gt;) -&gt; () in Pokemon.PokemonsViewController.fetchAbilitiesForPokemons() -&gt; ()"
+                  moduleName = "Pokemon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ece.ok/Documents/firstExer/Pokemon/Pokemon/VCS/PokemonsVCS/PokemonsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "4C002E83-B5C4-4B69-8A9F-7938946DD3F2 - 4fcb634973e0e41d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Pokemon.Welcome, Swift.Error&gt;) -&gt; () in Pokemon.PokemonsViewController.fetchAbilitiesForPokemons() -&gt; ()"
+                  moduleName = "Pokemon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ece.ok/Documents/firstExer/Pokemon/Pokemon/VCS/PokemonsVCS/PokemonsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D02B30B6-5533-4CF8-B1EA-81FF5D78FF1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokemon/VCS/PokemonsVCS/PokemonsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
